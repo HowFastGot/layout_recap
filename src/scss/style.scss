@@ -1,0 +1,210 @@
+//<Обнуление файлов / импорт переменных>====================================================================================================================================
+@import '_nullStyle';
+@import '_variables';
+//<Обнуление файлов / импорт переменных>====================================================================================================================================
+
+//-<Подключаем файлы стилей>==============================================================
+@import '_header';
+@import '_productCarusel';
+@import '_pixel';
+@import '_productCart';
+@import '_category-shop';
+@import '_google-product';
+@import '_sustainable-section';
+@import '_login-section';
+@import '_prefooter-navigation';
+@import '_footer';
+//@import "_home";
+//@import "_forms";
+//@import "_UI";
+//-</Подключаем файлы стилей>==============================================================
+
+//<Подключаем шрифты>=================================================================================================
+//--&display=swap - оптимизация латиницы
+//--&subset=cyrillic-ext - оптимизация кирилици
+//@import "fonts"; //ипорт локально
+//@import url() - импорт ссылкой
+//</Подключаем шрифты>=================================================================================================
+
+//-<Иконочные шрифты>-==============================================================
+//@import   ; //скомпилированный фал был добавлен в папку после скачивания и удаления лишего
+//-</Иконочные шрифты>-==============================================================
+
+//-<Обнуление общиих параметров>-===================================================
+body {
+	min-height: 100%;
+	font-family: $font-family;
+	color: #3c4043;
+	font-size: 16px;
+	font-weight: 400;
+
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+//-<Обнуление общих параметров>-===================================================
+
+//<Wrapper и Ограничивающий контейнер>-========================================================================
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	width: 100%;
+}
+
+//---------------------------------------
+._container {
+	@media (min-width: $md4) {
+		padding: 0 10px;
+		max-width: $maxWidthContainer;
+		margin: 0 auto;
+	}
+}
+
+.carusel-container {
+	max-width: calc($maxWidthContainer - 130px);
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.major-container {
+	max-width: calc($maxWidthContainer - 68px);
+	margin: 0 auto;
+
+	overflow: hidden;
+}
+//</Wrapper и Ограничивающий контейнер>========================================================================
+
+//-<Основная сетка>==================================================================
+.main {
+	width: 100%;
+
+	&__banner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	&__productCarusel {
+	}
+
+	&__pixel-board {
+		margin: 10% auto 6%;
+	}
+
+	&__product-cart {
+	}
+
+	&__shop-category {
+		margin: 9.8% 0;
+	}
+
+	&__sustainability {
+		margin: 13% 0 6.5%;
+	}
+	&__login {
+		margin-bottom: 9.74%; /* 120/1232 */
+		padding-top: 56px;
+	}
+
+	&__prefooter-navigation {
+	}
+
+	&__footer {
+		margin-top: 5.682%; /* 70/1232 */
+		padding: 40px 20px;
+
+		@media (max-width: $md4) {
+			padding: 40px 10px;
+		}
+	}
+}
+.banner-main {
+	&__img-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			min-height: 600px;
+			object-fit: cover;
+			object-position: right;
+
+			@media (max-width: $md3) {
+				object-position: right -13em top 0px;
+			}
+		}
+	}
+
+	&__text-block {
+		position: absolute;
+		top: 25.7%;
+		left: 10%;
+	}
+}
+
+.banner-text {
+	max-width: 356px;
+
+	@media (max-width: $md3) {
+		padding: 5px;
+		border-radius: 15px;
+		background: rgb(255, 255, 255, 0.5);
+	}
+	&__main-title {
+		font-size: 57px;
+		line-height: 1.2;
+		letter-spacing: 0.04em;
+		color: #3c4043;
+	}
+
+	&__third-title {
+		margin: 22px 0;
+		font-size: 16px;
+		line-height: 150%;
+		color: #3c4043;
+	}
+
+	&__actions-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0 20px;
+		padding-right: 22px;
+	}
+
+	&__first-trigger {
+		padding: 8px 20px;
+		font-size: 16px;
+		line-height: 130%;
+		text-align: center;
+		color: #3c4043;
+
+		border: 2px solid #3c4043;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	&__second-trigger {
+		@extend .banner-text__first-trigger;
+		border: 0;
+		padding: 0;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+//-<Основная сетка>==================================================================

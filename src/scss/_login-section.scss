@@ -1,0 +1,55 @@
+.login-section {
+	&__title {
+		position: relative;
+
+		max-width: 580px;
+		margin: 0 auto;
+		font-size: 32px;
+		line-height: 125%;
+		letter-spacing: 0.02em;
+		text-align: center;
+		color: #3c4043;
+
+		&::before {
+			content: '';
+			font-size: 50px;
+			color: #8ab4f8;
+
+			position: absolute;
+			top: -56px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	button {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__login-button {
+		margin: 42px auto 28px !important;
+		padding: 8px 20px;
+		border: 2px solid #5f6368;
+		border-radius: 4px;
+		line-height: 150%;
+
+		color: #202124;
+	}
+
+	&__email-button {
+		font-size: 14px;
+		line-height: 143%;
+		letter-spacing: 0.01em;
+		text-align: center;
+		color: #1967d2;
+	}
+
+	&__dec {
+		margin-top: 9%; /* 120/1232 */
+		padding: 0 4.058%; /* 50/1232 */
+		font-size: 12px;
+		line-height: 167%;
+		color: #3c4043;
+	}
+}

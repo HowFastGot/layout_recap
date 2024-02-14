@@ -1,0 +1,30 @@
+.prefooter-navigation {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+
+	&__navigationParent {
+		@media (min-width: $md3) {
+			margin-right: 158px;
+		}
+	}
+
+	&__nav-list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(100px, auto));
+		grid-template-rows: repeat(10, auto);
+		gap: 24px;
+	}
+
+	&__nav-item {
+		&_second-colmn {
+			grid-column-start: 2;
+		}
+	}
+
+	&__link {
+		font-size: 14px;
+		line-height: 157%;
+		color: #3c4043;
+	}
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include("head.html")
+	<body>
+		@@include("header.html")
+		<main class="main _container">
+			<section class="main__banner banner-main">
+				<figure class="banner-main__img-wrapper">
+					<img src="img/banner/banner.jpg" alt="Banner" loading="eager" />
+					<caption></caption>
+				</figure>
+				<div class="banner-main__text-block banner-text">
+					<h1 class="banner-text__main-title">Inhale. Gift⁠. Exhale.</h1>
+					<h3 class="banner-text__third-title">
+						The gifts you need, stress-free. Shop the best of Google with ease.
+					</h3>
+					<ul class="banner-text__actions-block">
+						<li class="banner-text__first-trigger">
+							<a href="#">Browse deals</a>
+						</li>
+						<li class="banner-text__second-trigger">
+							<a href="#">Browse the gift guide</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="main__productCarusel productCarusel">
+				<h5 class="productCarusel__title">
+					Sneak a peek. For you or for them.
+				</h5>
+				<!-- prettier-ignore -->
+				<div class="productCarusel__row carusel-container">
+					@@loop("productCarusel.html", [ { "title": "Google Pixel Watch", "text": "New", "link":
+					"./img/carusel/1.png"}, { "title": "Pixel 7 Pro", "text": "New", "link": "./img/carusel/2.png" }, { "title":
+					"Pixel 7", "text": "New", "link": "./img/carusel/3.png" }, { "title": "Pixel Buds Pro", "text": "",
+					"link":"./img/carusel/4.png" }, { "title": "Nest Doorbells", "text": "New", "link": "./img/carusel/5.png" }, {
+					"title": "Nest Wifi Pro", "text": "New", "link": "./img/carusel/6.png" }, { "title": "Google Pixel Watch",
+					"text": "New", "link": "./img/carusel/1.png"}, { "title": "Pixel 7 Pro", "text": "New", "link":
+					"./img/carusel/2.png" }, { "title": "Pixel 7", "text": "New", "link": "./img/carusel/3.png" },] )
+				</div>
+			</section>
+			<section class="main__pixel-board pixel major-container">
+				<figure class="pixel__img-wrapper">
+					<img src="img/pixel-section/pixel.jpg" alt="pixel main photo" />
+				</figure>
+				<div class="pixel__text-block">
+					<h5 class="pixel__title">
+						This holiday season, Google Pixel is giving back.
+					</h5>
+					<p class="pixel__desc">
+						We're contributing 11 million to the NBA Foundation to help advance
+						HBCU students in their careers across STEM, sports, and media
+						industries.
+					</p>
+					<a href="#Learn more" class="pixel__link-details">Learn more </a>
+				</div>
+			</section>
+			<!-- prettier-ignore -->
+			<section class="main__product-cart product-cart major-container">
+				@@loop("productCart.html",[ { "title": "Google Pixel Watch", 
+				"desc": "<li>Help by Google.</li> <li>Health by Fitbit.</li>",
+				"link":"img/product-cart/watch.png"}, 
+				{ "title": "Nest Wifi Pro with Wi-Fi 6E", "desc": "<li>The better way <br> to Wi-Fi.</li>",
+				"link":"img/product-cart/headsets.png"},
+				{ "title": "Nest Doorbell (wired)", "desc": "<li>Know more.</li> <li>No charging.</li>",
+				"link":"img/product-cart/webcam.png"},
+				{ "title": "Pixel Pass", "desc": "<li>One price for</li> <li>all things Pixel.</li>",
+				"link":"img/product-cart/multipleStores.png"},
+				{ "title": "Switch to Pixel", "desc": "<li>Here’s what #TeamPixel has to say about it.</li>",
+				"link":"img/product-cart/dude.png"}
+				
+				])
+			</section>
+			<!-- prettier-ignore -->
+			<section class="main__shop-category category-shop major-container">
+					<h3 class="category-shop__title">Shop by category.</h3>
+					<ul class="category-shop__list">@@loop("shopCategoryCart.html", [
+							{"src": "img/category-shop/1.png", "href": "cameras src", "linkText": "Cameras"},
+							{"src": "img/category-shop/2.png", "href": "Doorbells src", "linkText": "Doorbells"},
+							{"src": "img/category-shop/3.png", "href": "Streaming src", "linkText": "Streaming"},
+							{"src": "img/category-shop/4.png", "href": "Packages src", "linkText": "Packages"}
+						])</ul>
+			</section>
+			<!-- prettier-ignore -->
+			<section class="main__googleWatch_Headsets google-product major-container">
+				@@loop("productCart.html",[ { "title": "Watches", 
+				"desc": "<li>Keep moving.</li><li>Keep improving.</li>", 
+				"link":"img/watch&headsets/1.png"}, 
+				{ "title": "Nest Wifi Pro with Wi-Fi 6E", 
+				"desc": "<li>Great sound.</li><li>All around.</li>", 
+				"link":"img/watch&headsets/2.png"}])
+			</section>
+			<section class="main__sustainability sustainabile-work major-container">
+				<div class="sustainabile-work__flex-row">
+					<div class="sustainabile-work__images-column">
+						<figure
+							class="sustainabile-work__img-wrapper sustainabile-work__img-wrapper_1">
+							<img src="img/sustainable-section/oink.jpg" alt="Grid images" />
+						</figure>
+						<figure
+							class="sustainabile-work__img-wrapper sustainabile-work__img-wrapper_2">
+							<img src="img/sustainable-section/wind.jpg" alt="Grid images" />
+						</figure>
+						<figure
+							class="sustainabile-work__img-wrapper sustainabile-work__img-wrapper_3">
+							<img src="img/sustainable-section/big.jpg" alt="Grid images" />
+						</figure>
+					</div>
+					<div class="sustainabile-work__text-column sustainabile-text">
+						<h3 class="sustainabile-text__title">
+							Putting sustainability to work.
+						</h3>
+						<p class="sustainabile-text__desc">
+							We’re committed to using recycled or renewable material in all
+							Pixel, Nest, and Fitbit products by 2025.
+						</p>
+						<a href="#Learn more" class="sustainabile-text__link">Learn more</a>
+					</div>
+				</div>
+			</section>
+			<section class="main__login login-section">
+				<h5 class="login-section__title icon-login-section">
+					Keep me updated about devices, news, tips, and offers from Google
+					Store.
+				</h5>
+				<button class="login-section__login-button">Log in and sign up</button>
+				<button class="login-section__email-button">
+					or enter email address
+				</button>
+				<p class="login-section__dec">
+					Here’s what you will pay for Pixel Pass: You'll be required to finance
+					your Pixel Pass purchase with 0% APR Google Store Financing.​​ The
+					full cost of your Pixel and Preferred Care is spread out over 24
+					monthly payments. The Google services included in Pixel Pass will be
+					charged to your Google Store Financing account each month. Your Pixel
+					Pass subscription will appear as two separate transactions every month
+					on your Google Store Financing account. From $45/month: $648.68 at 0%
+					APR with 24 equal monthly payments = $27.03/month plus Pixel Pass
+					services (Google One 200 GB) = $17.97/month for a Total monthly
+					payment = $45/month. Adjusted for taxes and shipping.
+				</p>
+			</section>
+			<section class="main__prefooter-navigation prefooter-navigation">
+				@@include("prefooter-navigation.html")
+			</section>
+		</main>
+		<footer class="main__footer footer _container">
+			<div class="footer__social-meadia">
+				<a href="#dsdad" class="footer__social-icon"
+					><img src="img/footer/Frame.png" alt=""
+				/></a>
+				<a href="#dsdad" class="footer__social-icon"
+					><img src="img/footer/FRAME-1.png" alt="" /></a
+				><a href="#dsdad" class="footer__social-icon"
+					><img src="img/footer/FRAME-2.png" alt="" /></a
+				><a href="#dsdad" class="footer__social-icon"
+					><img src="img/footer/FRAME-3.png" alt="" /></a
+				><a href="#dsdad" class="footer__social-icon"
+					><img src="img/footer/FRAME-4.png" alt=""
+				/></a>
+			</div>
+
+			<ul class="footer__list">
+				<li class="footer__list-item">
+					<a href="" class="footer__link">United States</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="" class="footer__link">Privacy</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="" class="footer__link">Google Nest Commitment to Privacy</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="" class="footer__link">Sales Terms</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="" class="footer__link">Terms of Service</a>
+				</li>
+				<li class="footer__list-item">
+					<a href="" class="footer__link">Careers</a>
+				</li>
+			</ul>
+		</footer>
+		<script type="module" src="/js/app.min.js"></script>
+	</body>
+</html>

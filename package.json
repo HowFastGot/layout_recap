@@ -1,0 +1,52 @@
+{
+	"name": "google_market",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"gulp": "gulp",
+		"gulp_b": "gulp build --build",
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.18.5",
+		"@babel/preset-env": "^7.7.4",
+		"babel-loader": "^8.0.6",
+		"core-js": "^3.4.2",
+		"del": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-babel": "^8.0.0",
+		"gulp-clean-css": "latest",
+		"gulp-file-include": "latest",
+		"gulp-fonter": "latest",
+		"gulp-group-css-media-queries": "latest",
+		"gulp-if": "latest",
+		"gulp-imagemin": "latest",
+		"gulp-newer": "latest",
+		"gulp-notify": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-replace": "latest",
+		"gulp-sass": "latest",
+		"gulp-svg-sprite": "latest",
+		"gulp-ttf2woff2": "latest",
+		"gulp-util": "latest",
+		"gulp-version-number": "latest",
+		"gulp-webp": "latest",
+		"gulp-webp-html-nosvg": "latest",
+		"gulp-webpcss": "latest",
+		"gulp-zip": "latest",
+		"vinyl-ftp": "latest",
+		"vite": "^5.1.0",
+		"webp-converter": "2.2.3",
+		"webpack": "latest",
+		"webpack-stream": "latest"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.1",
+		"sass": "^1.70.0"
+	}
+}

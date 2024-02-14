@@ -1,0 +1,42 @@
+.google-product {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	gap: 24px;
+
+	.product-cart__item {
+		flex: 0 1 49%;
+
+		background-color: #e7ebee;
+		&:first-child {
+			background-color: #f3f2f1;
+		}
+	}
+
+	.item-cart {
+		&__title {
+			margin-top: 20px;
+		}
+
+		&__list {
+			margin: 15px 0 27px;
+		}
+
+		&__product-link {
+			margin: 0;
+		}
+
+		&__img-wrapper {
+			max-height: 461px;
+			margin-top: 48px;
+		}
+	}
+
+	@media (max-width: $md3) {
+		flex-wrap: wrap;
+
+		.product-cart__item {
+			flex: 1 1 100%;
+		}
+	}
+}
